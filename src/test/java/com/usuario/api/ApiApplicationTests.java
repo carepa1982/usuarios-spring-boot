@@ -1,4 +1,4 @@
-package com.usuarios.api;
+package com.usuario.api;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

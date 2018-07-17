@@ -25,7 +25,7 @@ import com.usuario.api.util.CustomErrorType;
 import com.usuario.api.util.CustomMessageType;
 import com.usuario.api.util.CustomResponseType;
 
-@CrossOrigin
+@CrossOrigin(origins="http://localhost:4200")
 @RestController
 @RequestMapping("/api")
 public class UsuarioController {

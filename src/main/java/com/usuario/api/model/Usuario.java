@@ -39,6 +39,23 @@ public class Usuario implements Serializable {
 	@NotEmpty
 	@Column(name = "NV_EMAIL", nullable = false)
 	private String email;
+	
+	public Usuario() {
+		super();
+	}
+	
+
+	public Usuario(Integer codigo, @NotEmpty String primerNombre, @NotEmpty String segundoNombre,
+			@NotEmpty String login, @NotEmpty String email) {
+		super();
+		this.codigo = codigo;
+		this.primerNombre = primerNombre;
+		this.segundoNombre = segundoNombre;
+		this.login = login;
+		this.email = email;
+	}
+
+
 
 	public Integer getCodigo() {
 		return codigo;
